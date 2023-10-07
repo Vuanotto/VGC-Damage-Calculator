@@ -1070,7 +1070,7 @@ var gen, pokedex, setdex, setdexCustom, typeChart, moves, abilities, items, STAT
 $(".gen").change(function () {
     gen = ~~$(this).val();
 
-    loadSVColors(document.getElementById('switchTheme').value);     //
+    //loadSVColors(document.getElementById('switchTheme').value);     //
 
     switch (gen) {
         case 1: //Gen 1
