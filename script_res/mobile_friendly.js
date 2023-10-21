@@ -26,3 +26,19 @@ function HideDisplay(displayID, buttonID)
         buttonToUpdate.textContent = "▲";
     }
 }
+
+function SwitchCSSMode()
+{
+    // Obtains an array of all <link> 
+    // elements. 
+    // Select your element using indexing. 
+    var theme = document.getElementsByTagName('link')[1];
+
+    // Change the value of href attribute  
+    // to change the css sheet. 
+    if (theme.getAttribute('href') == 'mobileFriendlyLight.css') {
+        theme.setAttribute('href', 'mobileFriendlyDark.css');
+    } else {
+        theme.setAttribute('href', 'mobileFriendlyLight.css');
+    }
+}
